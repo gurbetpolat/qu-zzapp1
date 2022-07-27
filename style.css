@@ -1,0 +1,129 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+}
+
+:root{
+    --hue-natural:200;
+    --hue-wrong:0;
+    --hue-correct:145;
+}
+
+body{
+    --hue:var(--hue-natural);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    background-color: hsl(var(--hue), 100%, 20%);
+
+}
+
+body.correct{
+    --hue: var(--hue-correct);
+}
+
+body.wrong{
+    --hue: var(--hue-wrong);
+}
+
+.container{
+    width: 800px;
+    height: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+   
+}
+#question-container{
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#question{
+    font-size: 50px;
+    font-family: sans-serif;
+  
+}
+
+.btn:hover{
+    background-color: yellow;
+}
+
+.btn{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    height: 60px;
+    
+    top: 20px;
+}
+p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-btn{
+   
+    text-align: center;
+    height: 150px;
+    font-weight: 225px;
+    font-size: medium;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+#start-btn:hover{
+    background-color:yellow;
+}
+
+#next-btn{
+    text-align: center;
+    height: 150px;
+    margin: 50px;
+    padding: 100px;
+    font-weight: 225px;
+    font-size: medium;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+
+#next-btn:hover{
+    background-color:yellow;
+}
+.btnsag{
+  
+    display: flex;
+    margin-left: 690px;
+    margin-top: 30px;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    background-color: green;
+}
+
+
+.btnsol{
+    
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    display: flex;
+    color:white;
+    background-color:green;
+    
+}
